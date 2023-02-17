@@ -11,11 +11,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class App {
     public static void main(String[] args) {
-        
+       
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.google.com/");
+        
         try {
+
+            /* 
             driver.get("https://es.wikipedia.org/wiki/Wikipedia:Portada");
 
             System.out.println(driver.getTitle());
@@ -46,6 +49,8 @@ public class App {
             busqueda.sendKeys("Jake el perro");
             BotonBusqueda.sendKeys(Keys.ENTER);
             assertEquals("Jake el perro", driver.getTitle());
+            */
+            
             Thread.sleep(3000);
         } catch (InterruptedException e) {
 
